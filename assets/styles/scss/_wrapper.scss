@@ -1,0 +1,184 @@
+@import './variables';
+.wrapper {
+    min-height: 100vh;
+    background-color: $Red;
+    background-image: url(/assets/images/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1110px;
+        margin: 0 auto;
+        header {
+            .header-container {
+                color: white;
+                margin-top: 30px;
+                h1 {
+                    font-size: 49px;
+                    line-height: 54px;
+                }
+                p {
+                    margin: 30px 0;
+                }
+            }
+        }
+        main {
+            .form-wrapper {
+                margin-left: 50px;
+                .trial {
+                    background: $Blue;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    border-radius: 10px;
+                    height: 60px;
+                    box-shadow: 0 8px 0 0 hsla(249, 10%, 26%, 0.2);
+                    span {
+                        font-size: 15px;
+                        font-weight: 200;
+                        color: white;
+                        letter-spacing: 0.3px;
+                        .bold {
+                            font-weight: 600;
+                        }
+                    }
+                }
+                .form-container {
+                    background: white;
+                    width: 540px;
+                    margin-top: 25px;
+                    padding: 40px;
+                    border-radius: 10px;
+                    box-shadow: 0 8px 0 0 hsla(249, 10%, 26%, 0.2);
+                    form {
+                        display: flex;
+                        flex-direction: column;
+                        .container {
+                            flex-direction: column;
+                            position: relative;
+                            input {
+                                width: 460px;
+                                height: 56px;
+                                margin-bottom: 20px;
+                                border-radius: 5px;
+                                border: 1px solid hsl(246, 84%, 95%);
+                                padding-left: 30px;
+                                font-family: inherit;
+                                font-weight: 600;
+                                color: $Dark-Blue;
+                                font-size: 14px;
+                                &:focus {
+                                    border: 1px solid $Dark-Blue;
+                                    outline: none;
+                                }
+                            }
+                            .error-icon {
+                                background: url(/assets/images/icon-error.svg);
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                height: 30px;
+                                width: 30px;
+                                position: absolute;
+                                top: 12px;
+                                right: 24px;
+                                display: none;
+                            }
+                            .validate {
+                                font-size: 10px;
+                                right: 0;
+                                font-weight: 500;
+                                font-style: italic;
+                                color: $Red;
+                                position: absolute;
+                                top: 65px;
+                                display: none;
+                            }
+                        }
+                        .fname-container.error {
+                            .fname {
+                                border: 2px solid $Red;
+                            }
+                            .fname-error {
+                                display: block;
+                            }
+                        }
+                        .lname-container.error {
+                            .lname {
+                                border: 2px solid $Red;
+                            }
+                            .lname-error {
+                                display: block;
+                            }
+                        }
+                        .email-container.error {
+                            #email {
+                                border: 2px solid $Red;
+                                color: $Red;
+                            }
+                            .email-error {
+                                display: block;
+                            }
+                        }
+                        .password-container.error {
+                            #password {
+                                border: 2px solid $Red;
+                            }
+                            .password-error {
+                                display: block;
+                            }
+                        }
+                        button {
+                            height: 55px;
+                            background: $Green;
+                            border: none;
+                            border-radius: 5px;
+                            color: white;
+                            text-transform: uppercase;
+                            font-weight: 500;
+                            font-family: inherit;
+                            font-size: 16px;
+                            letter-spacing: 0.3px;
+                            cursor: pointer;
+                            box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.1);
+                            transition: 0.2s;
+                            &:hover {
+                                opacity: 0.8;
+                            }
+                        }
+                        .agree {
+                            margin-top: 15px;
+                            color: $Grayish-Blue;
+                            font-size: 11px;
+                            text-align: center;
+                            a {
+                                color: $Red;
+                                font-weight: 700;
+                                text-decoration: none;
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                    // form.error {
+                    //     .validate {
+                    //         display: block;
+                    //     }
+                    // }
+                }
+            }
+        }
+        footer {
+            display: none;
+            text-align: center;
+            margin: 20px 0;
+        }
+    }
+}

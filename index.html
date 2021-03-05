@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <link rel="stylesheet" href="/assets/styles/styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <header>
+        <div class="header-container">
+          <h1>Learn to code by watching others</h1>
+          <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+            but understanding how developers think is invaluable.</p>
+        </div>
+          <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="https://github.com/rontoyhacao" target="_blank">Ron Paolo Toyhacao</a>.
+          </p>
+      </header>
+  
+      <main>
+        <div class="form-wrapper">
+          <div class="trial"><span><span class="bold">Try it free 7 days</span> then $20/mo. thereafter</span></div>
+          <div class="form-container">
+            <form id="form" action="">
+              <div class="container fname-container">
+                <input class="fname" type="text" placeholder="First Name">
+                <div class="error-icon fname-error"></div>
+                <div class="validate fname-error">First Name cannot be empty</div>
+              </div>
+              <div class="container lname-container">
+                <input class="lname" type="text" placeholder="Last Name">
+                <div class="error-icon lname-error"></div>
+                <div class="validate lname-error">Last Name cannot be empty</div>
+              </div>
+              <div class="container email-container">
+                <input type="email" name="" id="email" placeholder="Email Address">
+                <div class="error-icon email-error"></div>
+                <div class="validate email-error">Looks like this is not an email</div>
+              </div>
+              <div class="container password-container">
+                <input type="password" name="" id="password" placeholder="Password">
+                <div class="error-icon password-error"></div>
+                <div class="validate password-error">Password cannot be empty</div>
+              </div>
+              <button>Claim your free trial</button>
+              <div class="agree">By clicking the button, you are agreeing to our <a href="https://github.com/rontoyhacao" target="_blank" rel="noopener noreferrer"> Terms and Services</a></div>
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="https://github.com/rontoyhacao" target="_blank">Ron Paolo Toyhacao</a>.
+        </p>
+      </footer>
+    </div>
+  </div>
+
+  
+  <script src="/assets/scripts/main.js" async defer></script>
+</body>
+</html>

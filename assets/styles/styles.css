@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap");
+.attribution {
+  font-size: 11px;
+  color: white;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.wrapper {
+  min-height: 100vh;
+  background-color: #ff7a7a;
+  background-image: url(/assets/images/bg-intro-desktop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.wrapper .container header .header-container {
+  color: white;
+  margin-top: 30px;
+}
+
+.wrapper .container header .header-container h1 {
+  font-size: 49px;
+  line-height: 54px;
+}
+
+.wrapper .container header .header-container p {
+  margin: 30px 0;
+}
+
+.wrapper .container main .form-wrapper {
+  margin-left: 50px;
+}
+
+.wrapper .container main .form-wrapper .trial {
+  background: #6055a5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  height: 60px;
+  -webkit-box-shadow: 0 8px 0 0 rgba(62, 60, 73, 0.2);
+          box-shadow: 0 8px 0 0 rgba(62, 60, 73, 0.2);
+}
+
+.wrapper .container main .form-wrapper .trial span {
+  font-size: 15px;
+  font-weight: 200;
+  color: white;
+  letter-spacing: 0.3px;
+}
+
+.wrapper .container main .form-wrapper .trial span .bold {
+  font-weight: 600;
+}
+
+.wrapper .container main .form-wrapper .form-container {
+  background: white;
+  width: 540px;
+  margin-top: 25px;
+  padding: 40px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 8px 0 0 rgba(62, 60, 73, 0.2);
+          box-shadow: 0 8px 0 0 rgba(62, 60, 73, 0.2);
+}
+
+.wrapper .container main .form-wrapper .form-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .container main .form-wrapper .form-container form .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.wrapper .container main .form-wrapper .form-container form .container input {
+  width: 460px;
+  height: 56px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #eae8fd;
+  padding-left: 30px;
+  font-family: inherit;
+  font-weight: 600;
+  color: #3e3c49;
+  font-size: 14px;
+}
+
+.wrapper .container main .form-wrapper .form-container form .container input:focus {
+  border: 1px solid #3e3c49;
+  outline: none;
+}
+
+.wrapper .container main .form-wrapper .form-container form .container .error-icon {
+  background: url(/assets/images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 12px;
+  right: 24px;
+  display: none;
+}
+
+.wrapper .container main .form-wrapper .form-container form .container .validate {
+  font-size: 10px;
+  right: 0;
+  font-weight: 500;
+  font-style: italic;
+  color: #ff7a7a;
+  position: absolute;
+  top: 65px;
+  display: none;
+}
+
+.wrapper .container main .form-wrapper .form-container form .fname-container.error .fname {
+  border: 2px solid #ff7a7a;
+}
+
+.wrapper .container main .form-wrapper .form-container form .fname-container.error .fname-error {
+  display: block;
+}
+
+.wrapper .container main .form-wrapper .form-container form .lname-container.error .lname {
+  border: 2px solid #ff7a7a;
+}
+
+.wrapper .container main .form-wrapper .form-container form .lname-container.error .lname-error {
+  display: block;
+}
+
+.wrapper .container main .form-wrapper .form-container form .email-container.error #email {
+  border: 2px solid #ff7a7a;
+  color: #ff7a7a;
+}
+
+.wrapper .container main .form-wrapper .form-container form .email-container.error .email-error {
+  display: block;
+}
+
+.wrapper .container main .form-wrapper .form-container form .password-container.error #password {
+  border: 2px solid #ff7a7a;
+}
+
+.wrapper .container main .form-wrapper .form-container form .password-container.error .password-error {
+  display: block;
+}
+
+.wrapper .container main .form-wrapper .form-container form button {
+  height: 55px;
+  background: #38cc8c;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: inherit;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.wrapper .container main .form-wrapper .form-container form button:hover {
+  opacity: 0.8;
+}
+
+.wrapper .container main .form-wrapper .form-container form .agree {
+  margin-top: 15px;
+  color: #b9b6d3;
+  font-size: 11px;
+  text-align: center;
+}
+
+.wrapper .container main .form-wrapper .form-container form .agree a {
+  color: #ff7a7a;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.wrapper .container main .form-wrapper .form-container form .agree a:hover {
+  text-decoration: underline;
+}
+
+.wrapper .container footer {
+  display: none;
+  text-align: center;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 25px;
+    max-width: initial;
+  }
+  .wrapper .container header {
+    text-align: center;
+  }
+  .wrapper .container header .header-container {
+    margin: 80px 0 60px 0;
+  }
+  .wrapper .container header .header-container h1 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .wrapper .container header .header-container p {
+    margin: 20px 0;
+  }
+  .wrapper .container header .attribution {
+    display: none;
+  }
+  .wrapper .container main .form-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+  .wrapper .container main .form-wrapper .trial {
+    padding: 0 50px;
+    height: 90px;
+    line-height: 25px;
+  }
+  .wrapper .container main .form-wrapper .form-container {
+    width: 100%;
+    padding: 20px;
+  }
+  .wrapper .container main .form-wrapper .form-container form .container {
+    margin: 0;
+    padding: 0;
+  }
+  .wrapper .container main .form-wrapper .form-container form .container input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .wrapper .container main .form-wrapper .form-container form .agree {
+    margin-top: 10px;
+    padding: 0 20px;
+    line-height: 20px;
+  }
+  .wrapper .container footer {
+    display: block;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  main .form-wrapper {
+    width: 540px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
